@@ -16,13 +16,25 @@ usd_jpy = 110.24
 
 sell_amount = 0.1
 
+last_jpy_btc = nil
+
 loop do
   ticker = Poloniex.ticker
   usdt_btc = JSON.parse(ticker)[check_currency_pair]['last']
 
   jpy_btc = usdt_btc.to_f * usd_jpy
 
-  puts Time.now.to_s + "\t" + jpy_btc.to_s
+  color = if last_jpy_btc == nil || jpy_btc == last_jpy_btc
+    :light_cyan
+    elsif jpy_btc < last_jpy_btc
+    :red
+  else
+    :green
+  end
+
+  percentile = (((jpy_btc / last_jpy_btc)  - 1) * 100) rescue 0
+
+  puts Time.now.to_s + "\t" + (jpy_btc.round(5).to_s + "\t" + percentile.round(3).to_s + '%').colorize(color)
 
   if jpy_btc > 38_000
     contents = jpy_btc
@@ -40,6 +52,8 @@ loop do
 
     break
   end
+
+  last_jpy_btc = jpy_btc
 
   sleep 60
 end

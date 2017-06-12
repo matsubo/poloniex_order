@@ -4,4 +4,5 @@ source "https://rubygems.org"
 gem 'dotenv'
 gem 'poloniex'
 gem 'json'
+gem 'colorize'
 
