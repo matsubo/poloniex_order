@@ -24,6 +24,7 @@ Poloniex Order
 ## Requirement
 
 - ruby >=2.3
+- bundler
 
 ## Usage
 
