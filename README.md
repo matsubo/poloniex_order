@@ -26,6 +26,14 @@ Poloniex Order
 - ruby >=2.3
 - bundler
 
+
+
+## Install
+
+```
+% bundle
+```
+
 ## Usage
 
 ```
@@ -37,12 +45,6 @@ Poloniex Order
 ![image](https://user-images.githubusercontent.com/98103/27017103-d5095862-4f60-11e7-90bd-dbcbae55db43.png)
 
 
-
-## Install
-
-```
-% bundle
-```
 
 ## Contribution
 
