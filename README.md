@@ -1,6 +1,7 @@
 Poloniex Order
 ====
 
+- Stop-Limit-Order script for [Poloniex](https://poloniex.com/)
 - Place and order when the price exceeds the threshold price.
 - notification feature is work on macos.
 
