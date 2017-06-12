@@ -32,6 +32,9 @@ Poloniex Order
 % bundle exec ruby main.rb
 ```
 
+![image](https://user-images.githubusercontent.com/98103/27016403-6dd877dc-4f5a-11e7-9491-382e9101de19.png)
+
+
 ## Install
 
 ```
