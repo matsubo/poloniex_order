@@ -39,8 +39,8 @@ loop do
   if jpy_btc > 38_000
     contents = jpy_btc
     title = 'Rate alert'
-    system('osascript -e \'display notification "%s" with title "%s" \'' % %w[contents title])
-
+    system('osascript -e \'display notification "%s" with title "%s" \'' % [contents, title])
+ 
     # execute order
     sleep 60
     rate = JSON.parse(ticker)['BTC_ETH']['lowestAsk'].to_f * 1.01
@@ -48,7 +48,7 @@ loop do
 
     contents = rate
     title = 'Placed and selling order'
-    system('osascript -e \'display notification "%s" with title "%s" \'' % %w[contents title])
+    system('osascript -e \'display notification "%s" with title "%s" \'' % [contents, title])
 
     break
   end
