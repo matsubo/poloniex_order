@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 gem 'dotenv'
-gem 'poloniex'
+gem 'poloniex', github: 'Lowest0ne/poloniex'
 gem 'json'
 gem 'colorize'
 
