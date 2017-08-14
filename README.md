@@ -1,9 +1,13 @@
 Poloniex Order
 ====
 
-- Stop-Limit-Order script for [Poloniex](https://poloniex.com/)
-- Place and order when the price exceeds the threshold price.
-- notification feature is work on macos.
+- main.rb
+  - Stop-Limit-Order script for [Poloniex](https://poloniex.com/)
+  - Place and order when the price exceeds the threshold price.
+  - notification feature is work on macos.
+- balance.rb
+  - print total balance in JPY and USD.
+
 
 ## Demo
 
@@ -19,6 +23,25 @@ Poloniex Order
 2017-06-12 10:23:00 +0900	37061.8192184032
 ...
 ```
+
+
+
+
+```
+% bundle exec ruby balance.rb
+BTC
+  1915420.2100013432 JPY
+  4.27600000 BTC
+
+ETH
+  3314574.693340411 JPY
+  7.39948410 BTC
+
+Sum
+  5229995 JPY
+  47748.56 USD
+```
+
 
 
 ## Requirement
